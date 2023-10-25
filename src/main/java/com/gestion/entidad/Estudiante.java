@@ -22,7 +22,7 @@ public class Estudiante extends Entidad{
     @Column(name = "fecha_nacimiento", nullable = false)
     private String fechaNacimiento;
 
-    @OneToOne (cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn(name = "id_contacto")
     private Contacto contacto;
 
